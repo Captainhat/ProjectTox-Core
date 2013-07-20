@@ -53,7 +53,7 @@ uint64_t current_time()
 uint32_t random_int()
 {
     #ifndef VANILLA_NACL
-    //NOTE: this function comes from libsodium
+    /* NOTE: this function comes from libsodium */
     return randombytes_random();
     #else
     return random();
